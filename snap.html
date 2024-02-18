@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to Safari</title>
+    <script type="text/javascript">
+        // Function to detect Snapchat browser
+        function isSnapchatBrowser() {
+        return /snapchat/i.test(navigator.userAgent);
+        }
+
+        // Function to redirect to Safari and open anna.com
+        function redirectToSafari() {
+            window.location.href = 'safari:https://securesmcd.com/s?a=112166&sm=2340&co=157229&mt=28';
+        }
+
+        // Check if the page is loaded in Snapchat browser and redirect if true
+        if (isSnapchatBrowser()) {
+            redirectToSafari();
+        }
+    </script>
+</head>
+<body>
+    <p>This page will redirect to Safari if opened in the Snapchat browser.</p>
+</body>
+</html>
